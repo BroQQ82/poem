@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古诗文大赛练习</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>古诗文大赛练习</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="countdown"></div>
+        <div id="feedback"></div>
+        <div id="buttons"> <!-- Added an ID for styling -->
+            <button id="submitButton" disabled>提交</button>
+            <button id="nextButton" style="display: none;" disabled>下一题</button>
+        </div>
+        <div id="stats">
+            <p>已答题目数量: <span id="totalQuestionsAsked">0</span></p>
+            <p>正确数量: <span id="totalCorrect">0</span></p>
+            <p>错误数量: <span id="totalIncorrect">0</span></p>
+            <p>正确率: <span id="correctRate">0%</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
